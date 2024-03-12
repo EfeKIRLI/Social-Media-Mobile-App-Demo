@@ -32,17 +32,17 @@ const UserPost = (props) => {
             <Image source={props.image} />
          </View>
          <View style={{marginLeft:20,flexDirection:'row'}}>   
-            <View style={{flexDirection:'row'}} >
+            <View style={{flexDirection:'row',alignItems:'center'}} >
                 <FontAwesome name={'heart'} color={'#79869F'} />
                 <Text style={{marginLeft:3, color:'#79869F'}}> {props.likes} </Text>
             </View>
 
-            <View style={{flexDirection:'row', marginLeft:27}} >
+            <View style={{flexDirection:'row',alignItems:'center', marginLeft:27}} >
                 <FontAwesome name='envelope' color={'#79869F'} />
                 <Text style={{marginLeft:3, color:'#79869F'}}> {props.comments} </Text>
             </View>
 
-            <View style={{flexDirection:'row',marginLeft:27}} >
+            <View style={{flexDirection:'row',alignItems:'center',marginLeft:27}} >
                 <FontAwesome name={'bookmark'} color={'#79869F'} />
                 <Text style={{marginLeft:3, color:'#79869F'}}> {props.bookmarks} </Text>
             </View>
